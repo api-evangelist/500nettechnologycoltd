@@ -1,0 +1,50 @@
+generated: '2026-09-05'
+method: probed
+source: live HTTPS probes of every host this record knows
+note: >-
+  Every named /.well-known path plus the APIs.json root paths was probed on both hosts the record
+  knows (the corporate site www.500net.com.tw and the legacy software-services site
+  www.500-home.com). Every path returned 404 from the origin's own error handler, so NO WellKnown
+  or SecurityTxt pointer is emitted — this file records a measured absence, not a served surface.
+  The apex 500net.com.tw does not resolve (NXDOMAIN); only the www host is published. A
+  negative-control path that cannot exist also returned 404 on both hosts, so neither origin is a
+  path-echoing or catch-all responder and the negatives are trustworthy.
+hit_count: 0
+path_echo_control: passed
+hosts:
+- host: https://www.500net.com.tw
+  soft_404_control:
+    path: /.well-known/500nettechnologycoltd-negative-control-7f3ab91c.json
+    status: 404
+    bytes: 355
+  documents:
+  - {path: /.well-known/security.txt, status: 404}
+  - {path: /.well-known/openid-configuration, status: 404}
+  - {path: /.well-known/oauth-authorization-server, status: 404}
+  - {path: /.well-known/oauth-protected-resource, status: 404}
+  - {path: /.well-known/api-catalog, status: 404}
+  - {path: /.well-known/ai-plugin.json, status: 404}
+  - {path: /.well-known/apis.json, status: 404}
+  - {path: /.well-known/aauth-resource.json, status: 404}
+  - {path: /.well-known/agent-card.json, status: 404}
+  - {path: /.well-known/agent.json, status: 404}
+  - {path: /apis.json, status: 404}
+  - {path: /apis.yml, status: 404}
+- host: https://www.500-home.com
+  soft_404_control:
+    path: /.well-known/500nettechnologycoltd-negative-control-7f3ab91c.json
+    status: 404
+    bytes: 30765
+  documents:
+  - {path: /.well-known/security.txt, status: 404}
+  - {path: /.well-known/openid-configuration, status: 404}
+  - {path: /.well-known/oauth-authorization-server, status: 404}
+  - {path: /.well-known/oauth-protected-resource, status: 404}
+  - {path: /.well-known/api-catalog, status: 404}
+  - {path: /.well-known/ai-plugin.json, status: 404}
+  - {path: /.well-known/apis.json, status: 404}
+  - {path: /.well-known/aauth-resource.json, status: 404}
+  - {path: /.well-known/agent-card.json, status: 404}
+  - {path: /.well-known/agent.json, status: 404}
+  - {path: /apis.json, status: 404}
+  - {path: /apis.yml, status: 404}

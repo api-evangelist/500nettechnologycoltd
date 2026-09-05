@@ -1,0 +1,48 @@
+# 500net Technology Co., Ltd.
+
+> 500net Technology Co., Ltd. (五百戶科技股份有限公司) is a Taipei-based systems integrator founded in
+> 2004. It combines telecommunications integration, electromechanical engineering, hardware design
+> and custom software development into smart-building, smart-factory, smart-parking and AI+IoT
+> platforms for enterprise clients in Taiwan. As of 2026-09-05 the company publishes NO public API,
+> developer portal, SDK, or machine-readable contract of any kind — integration is delivered as a
+> project engagement, and device-level interoperability is described in its own materials as
+> RS-485 / Modbus, wired, wireless and 4G/5G controller integration rather than a web API.
+
+## Solutions
+- [Smart Building](https://www.500net.com.tw/tw/Smart_Building.html): BA central-monitoring, green-building certification support, scheduled scenario control.
+- [Smart Factory](https://www.500net.com.tw/tw/Smart_Factory.html): Industry 4.0 production reporting, power monitoring, AI/AOI inspection, AMR robotics.
+- [Smart Parking](https://www.500net.com.tw/tw/Smart_Parking.html): plate recognition, card and mobile payment integration, municipal parking system integration.
+- [Heterogeneous Integration](https://www.500net.com.tw/tw/Heterogeneous_Integration.html): multi-vendor controller and device integration over 485/Modbus, wired, wireless, 4G/5G.
+- [Customization](https://www.500net.com.tw/tw/Customization.html): contract software development and IT outsourcing.
+- [Carbon Footprint / ESG](https://www.500net.com.tw/tw/CFV.html): carbon inventory and ESG reporting.
+- [Digital Twins](https://www.500net.com.tw/tw/Digital_Twins.html)
+- [Products](https://www.500net.com.tw/tw/Product.html)
+
+## Company
+- [Home](https://www.500net.com.tw/) — corporate site (Traditional Chinese)
+- [Home (English)](https://www.500net.com.tw/en/index.html)
+- [About](https://www.500net.com.tw/tw/About500Net.html)
+- [Customer cases](https://www.500net.com.tw/tw/Cases.html)
+- [Media coverage](https://www.500net.com.tw/tw/News_Center.html)
+- [Contact](https://www.500net.com.tw/tw/Contact_Us.html) — service@500net.com.tw, +886-2-2368-5500
+
+## Investors
+- [Corporate governance](https://www.500net.com.tw/tw/Corporate_Govemance.html)
+- [Financials](https://www.500net.com.tw/tw/Financials.html)
+- [Shareholder services](https://www.500net.com.tw/tw/Shareholder_Services.html)
+
+## API Evangelist profile
+- [apis.yml](https://raw.githubusercontent.com/api-evangelist/500nettechnologycoltd/refs/heads/main/apis.yml)
+- [Domain security probe](https://raw.githubusercontent.com/api-evangelist/500nettechnologycoltd/refs/heads/main/security/500nettechnologycoltd-domain-security.yml)
+- [/.well-known discovery probe](https://raw.githubusercontent.com/api-evangelist/500nettechnologycoltd/refs/heads/main/well-known/500nettechnologycoltd-well-known.yml)
+
+## Notes for agents
+- There is no base URL to call. Every contract-discovery path probed on 2026-09-05
+  (/openapi.json, /openapi.yaml, /swagger.json, /v1/openapi.json, /api-docs, /docs, /redoc,
+  /graphql, /apis.json, /apis.yml, /llms.txt and the full /.well-known set) returned HTTP 404 on
+  both www.500net.com.tw and www.500-home.com.
+- No A2A agent card, no MCP server, no AsyncAPI or webhook surface, and no first-party client library on npm, PyPI,
+  RubyGems, crates.io, Packagist or NuGet (all six searched for "500net" on 2026-09-05; zero
+  matching packages).
+- The correct route to an integration is the contact form / service@500net.com.tw, not a self-serve
+  developer signup.
