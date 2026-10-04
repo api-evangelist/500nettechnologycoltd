@@ -1,5 +1,5 @@
 aid: 500nettechnologycoltd
-name: 500net Technology Co., Ltd.
+name: 500net
 description: >-
   500net Technology Co., Ltd. (五百戶科技股份有限公司) is a Taipei-based systems integrator, founded in
   2004, that combines telecommunications integration, electromechanical engineering, hardware
@@ -91,3 +91,4 @@ x-coverage:
     - url: https://www.500-home.com/.well-known/security.txt
       status: 404
   checked: '2026-09-05'
+x-legal-name: 500net Technology Co., Ltd.
